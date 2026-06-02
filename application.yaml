@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/ganeshhhhhh/argo-rollout-guestbook-blue-green.git
-    path: guestbook-rollout
+    path: .
     targetRevision: HEAD
   destination:
     server: https://kubernetes.default.svc
