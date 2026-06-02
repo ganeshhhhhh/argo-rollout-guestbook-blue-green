@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: guestbook-ui
-          image: udemykcloud534/guestbook:green
+          image: udemykcloud534/guestbook:blue
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
@@ -29,7 +29,7 @@ spec:
   strategy:
     blueGreen:
       activeService: guestbook-ui
-      previewService: guestbook-ui-blue-green
+      previewService: guestbook-ui-canary
       autoPromotionEnabled: false
       scaleDownDelaySeconds: 300
 ---
